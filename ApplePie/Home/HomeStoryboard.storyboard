@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="ApplePie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GUESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsv-Ym-8NN">
+                                <rect key="frame" x="482.5" y="84" width="215" height="97"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpe-fW-tBG">
+                                <rect key="frame" x="487" y="171" width="123" height="97"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="68"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-WK-Hak">
+                                <rect key="frame" x="430" y="403" width="320" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="SS9-Gj-CqR"/>
+                                    <constraint firstAttribute="width" constant="320" id="cHn-oJ-v49"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Colors"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Colors">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="38"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="colorsButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QDJ-MH-2HM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49s-Q4-ETp">
+                                <rect key="frame" x="430" y="501" width="320" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="GVu-ch-Fk9"/>
+                                    <constraint firstAttribute="height" constant="66" id="Sbg-Yw-8OD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Colors"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Countries">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="38"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="countriesButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iFO-SY-2oP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dB-G5-3J3">
+                                <rect key="frame" x="430" y="599" width="320" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="NyK-6s-fU4"/>
+                                    <constraint firstAttribute="width" constant="320" id="aC8-gE-PbA"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Colors"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Animals">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="38"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="animalsButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ikv-vF-yfT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYe-LI-tDY">
+                                <rect key="frame" x="489" y="256" width="208" height="97"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="68"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pme-9i-rgM">
+                                <rect key="frame" x="430" y="697" width="320" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="Gg0-tJ-yqJ"/>
+                                    <constraint firstAttribute="width" constant="320" id="MRN-MJ-oNk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="e1N-zh-VTc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="pHI-pT-PGE"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Colors"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sports">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="38"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sportsButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vYP-4h-A0K"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jsv-Ym-8NN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="482.5" id="2Rf-pg-gvs"/>
+                            <constraint firstItem="5dB-G5-3J3" firstAttribute="top" secondItem="49s-Q4-ETp" secondAttribute="bottom" constant="32" id="2wC-KY-9fP"/>
+                            <constraint firstItem="jsv-Ym-8NN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="41w-yc-2Kh"/>
+                            <constraint firstItem="pme-9i-rgM" firstAttribute="top" secondItem="5dB-G5-3J3" secondAttribute="bottom" constant="32" id="77l-MW-rtc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="K9a-WK-Hak" secondAttribute="trailing" constant="430" id="7tF-x3-xfS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cpe-fW-tBG" secondAttribute="trailing" constant="570" id="8Kf-iu-gMq"/>
+                            <constraint firstItem="49s-Q4-ETp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="430" id="Ecj-Jk-7Sm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5dB-G5-3J3" secondAttribute="trailing" constant="430" id="GEX-G0-JbA"/>
+                            <constraint firstItem="Cpe-fW-tBG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="147" id="H9r-Eg-lGu"/>
+                            <constraint firstItem="KYe-LI-tDY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="489" id="I2L-V6-INv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="49s-Q4-ETp" secondAttribute="trailing" constant="430" id="Jf0-DB-e4z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pme-9i-rgM" secondAttribute="trailing" constant="430" id="KZp-pd-Hog"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jsv-Ym-8NN" secondAttribute="trailing" constant="482.5" id="L5C-gl-FMD"/>
+                            <constraint firstItem="49s-Q4-ETp" firstAttribute="top" secondItem="K9a-WK-Hak" secondAttribute="bottom" constant="32" id="Oow-kI-Sg7"/>
+                            <constraint firstItem="KYe-LI-tDY" firstAttribute="top" secondItem="jsv-Ym-8NN" secondAttribute="bottom" constant="75" id="TyG-iD-fID"/>
+                            <constraint firstItem="5dB-G5-3J3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="430" id="U7y-Fc-1rl"/>
+                            <constraint firstItem="K9a-WK-Hak" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="430" id="WKp-RB-aRu"/>
+                            <constraint firstItem="K9a-WK-Hak" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="o3e-JR-BPh"/>
+                            <constraint firstItem="pme-9i-rgM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="430" id="ogF-fq-Rrf"/>
+                            <constraint firstItem="K9a-WK-Hak" firstAttribute="top" secondItem="KYe-LI-tDY" secondAttribute="bottom" constant="50" id="om7-ew-fvM"/>
+                            <constraint firstItem="jsv-Ym-8NN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sZg-wf-Zvy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="KYe-LI-tDY" secondAttribute="trailing" constant="483" id="xSd-fN-spx"/>
+                            <constraint firstItem="Cpe-fW-tBG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="487" id="xj0-gD-zBv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalsButton" destination="5dB-G5-3J3" id="LkT-mp-lAO"/>
+                        <outlet property="colorsButton" destination="K9a-WK-Hak" id="EUw-Ih-fRy"/>
+                        <outlet property="countriesButton" destination="49s-Q4-ETp" id="Fqf-Hn-sWq"/>
+                        <outlet property="sportsButton" destination="pme-9i-rgM" id="rZD-5Z-QUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.932203389830512" y="8.7804878048780495"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--End View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EndVC" id="Y6W-OH-hqX" customClass="EndViewController" customModule="ApplePie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="1180" height="820"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y32-aT-2PH">
+                                <rect key="frame" x="340" y="366" width="500" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="Wus-va-5fO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="gameOver" translatesAutoresizingMaskIntoConstraints="NO" id="UHD-db-BkP">
+                                <rect key="frame" x="183.5" y="90" width="813" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="461" id="ZUg-x2-xgy"/>
+                                    <constraint firstAttribute="width" constant="813" id="sfD-a9-Sa4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzq-aa-cNJ">
+                                <rect key="frame" x="400" y="464" width="380" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="380" id="Im7-e4-F2V"/>
+                                    <constraint firstAttribute="height" constant="100" id="cCX-V2-CQR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Restart Game" subtitle="">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="27"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="restartButtonPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RnC-Ji-viH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UHD-db-BkP" secondAttribute="trailing" constant="183.5" id="2cZ-DR-KLT"/>
+                            <constraint firstItem="y32-aT-2PH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="340" id="B9n-nU-J78"/>
+                            <constraint firstItem="UHD-db-BkP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="M6e-K1-K3D"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lzq-aa-cNJ" secondAttribute="trailing" constant="400" id="OtV-e2-Ph6"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lzq-aa-cNJ" secondAttribute="bottom" constant="64.5" id="RO1-A8-ZK9"/>
+                            <constraint firstItem="lzq-aa-cNJ" firstAttribute="top" secondItem="y32-aT-2PH" secondAttribute="bottom" constant="45" id="VfF-YF-izI"/>
+                            <constraint firstItem="y32-aT-2PH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="X8a-mT-fxg"/>
+                            <constraint firstItem="y32-aT-2PH" firstAttribute="top" secondItem="UHD-db-BkP" secondAttribute="bottom" constant="40" id="Ya4-Qf-zOG"/>
+                            <constraint firstItem="lzq-aa-cNJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="400" id="aZc-Jg-BEr"/>
+                            <constraint firstItem="lzq-aa-cNJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="dsW-Ot-iEd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="y32-aT-2PH" secondAttribute="trailing" constant="340" id="mq3-mB-41F"/>
+                            <constraint firstItem="UHD-db-BkP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="183.5" id="rJJ-0S-OXm"/>
+                            <constraint firstItem="UHD-db-BkP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="66" id="zVL-nf-drn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gameOverImageView" destination="UHD-db-BkP" id="mdK-fn-fH5"/>
+                        <outlet property="restartButton" destination="lzq-aa-cNJ" id="qkk-9N-pMz"/>
+                        <outlet property="scoreLabel" destination="y32-aT-2PH" id="rE2-U9-Xip"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55.932203389830512" y="8.7804878048780495"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameOver" width="348" height="236"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
